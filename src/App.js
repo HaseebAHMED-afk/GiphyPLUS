@@ -1,10 +1,16 @@
 import React from 'react';
 import styles from './App.module.css';
 import { NavBar } from './Components/NavBar/NavBar';
-import { Typography } from '@material-ui/core';
 import { Trending } from './Components/Trending/Trending';
+import {fetchTrending} from './API/index';
 
 class App extends React.Component{
+
+   async componentDidMount(){
+     const response = await fetchTrending();
+     console.log(response);
+   }
+
   render(){
     return (
       <div>
