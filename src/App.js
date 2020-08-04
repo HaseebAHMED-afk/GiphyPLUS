@@ -24,7 +24,7 @@ class App extends React.Component{
 
 
   render(){
-    const {data,sportsData,entertaintment} = this.state;
+    const {data,sportsData,entertaintmentData} = this.state;
 
     return (
       <div>
@@ -32,7 +32,7 @@ class App extends React.Component{
         <img className={styles.ad1} src="https://media.giphy.com/headers/2020-07-27-05-1595862312/NBA_BANNER_HP.gif" />
         <Trending data={data} />
         <Sports data={sportsData} />
-        <Entertaintment data={entertaintment} />
+        <Entertaintment data={entertaintmentData} />
       </div>
     )
   }

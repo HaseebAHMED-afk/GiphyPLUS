@@ -3,3 +3,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+.images{
+    height: 150px;
+    width: 150px;
+    margin: 1px 7.5px;
+    object-fit: cover;
+}
