@@ -11,7 +11,7 @@ export const Entertaintment = ({data:entertaintmentData}) => {
                     const {images} = data;
                     const original = images ? images.original : null;
                     const url = original ? original.url : null;
-                    return <img key={i} className={styles.images} src={url} />
+                    return <img key={i} className={styles.images} src={url} alt={data.title} />
                 })
             }
         </div>

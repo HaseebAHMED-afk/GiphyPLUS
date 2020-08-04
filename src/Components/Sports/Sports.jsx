@@ -12,7 +12,7 @@ export const Sports = ({data:sportsData}) => {
                     const { images } = data;
                     const original = images ? images.original : null;
                     const url = original ? original.url : null;
-                    return <img key={i} src={url} className={styles.images} />
+                    return <img key={i} src={url} className={styles.images} alt={data.title} />
                 })
             }
         </div>

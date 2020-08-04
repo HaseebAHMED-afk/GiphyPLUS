@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Trending.module.css";
 
-export const Trending = ({data:data}) => {
+export const Trending = ({data}) => {
   
 
   return (
@@ -13,7 +13,7 @@ export const Trending = ({data:data}) => {
           const {images} = data;
           const original = images ? images.original : null;
           const url = original ? original.url : null;
-          return <img key={i} src={url}  className={styles.img}/>
+          return <img key={i} src={url}  className={styles.img} alt={data.title}/>
         })
       }
       </div>
